@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-uQ-nME">
+                                <rect key="frame" x="276" y="57" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleInstrument:" destination="BYZ-38-t0r" eventType="valueChanged" id="MUL-1C-KAI"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bls-wv-wSZ" customClass="AKPropertySlider">
+                                <rect key="frame" x="211" y="113" width="179" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-g0-8VG" customClass="AKPropertySlider">
+                                <rect key="frame" x="221" y="203" width="158" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="U0R-9Y-nY6" customClass="AKPropertySlider">
+                                <rect key="frame" x="241" y="285" width="118" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="uyy-uF-POn" customClass="AKPropertySlider">
+                                <rect key="frame" x="241" y="372" width="118" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hlN-6Q-v0j" customClass="AKPropertySlider">
+                                <rect key="frame" x="241" y="447" width="118" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NW-p8-d7v">
+                                <rect key="frame" x="65" y="57" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="waveform"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeWave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eub-iZ-xZr"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="3" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="SDV-iY-OWf" customClass="AKPropertySlider">
+                                <rect key="frame" x="29" y="212" width="118" height="31"/>
+                                <connections>
+                                    <action selector="lfoValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="GR7-W9-doV"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WuD-CR-30J" customClass="AKPropertySlider">
+                                <rect key="frame" x="24" y="399" width="118" height="31"/>
+                                <connections>
+                                    <action selector="reverbFeedback:" destination="BYZ-38-t0r" eventType="valueChanged" id="cyq-7W-gld"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iaT-xL-HT9" customClass="AKPropertySlider">
+                                <rect key="frame" x="29" y="492" width="118" height="31"/>
+                                <connections>
+                                    <action selector="delayTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="vj5-yR-W8B"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YW2-r7-Aeb" customClass="AKPropertySlider">
+                                <rect key="frame" x="18" y="550" width="118" height="31"/>
+                                <connections>
+                                    <action selector="variableDelayTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="fhA-I5-MMc"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="amplitudeSlider" destination="uyy-uF-POn" id="JxY-6K-jLx"/>
+                        <outlet property="carrierMultiplierSlider" destination="fz9-g0-8VG" id="7QF-CQ-pgf"/>
+                        <outlet property="changeWave" destination="4NW-p8-d7v" id="XBr-lq-mS2"/>
+                        <outlet property="delaySlider" destination="iaT-xL-HT9" id="XA7-AI-6NW"/>
+                        <outlet property="frequencySlider" destination="bls-wv-wSZ" id="23o-qV-xWZ"/>
+                        <outlet property="lfoFreqSlider" destination="SDV-iY-OWf" id="Erh-RV-52o"/>
+                        <outlet property="modIndexSlider" destination="U0R-9Y-nY6" id="anK-Hp-yg0"/>
+                        <outlet property="modMultiplierSlider" destination="hlN-6Q-v0j" id="Opf-Ya-aNm"/>
+                        <outlet property="reverbFeedbackSlider" destination="WuD-CR-30J" id="E96-yt-HUE"/>
+                        <outlet property="variableDelay" destination="YW2-r7-Aeb" id="cam-Mi-XZk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="260"/>
+        </scene>
+    </scenes>
+</document>
